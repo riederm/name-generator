@@ -1,6 +1,6 @@
 import { Component } from '@angular/core';
+import * as _ from 'extra-array';
 
-import { products } from '../products';
 
 @Component({
   selector: 'app-product-list',
@@ -8,16 +8,18 @@ import { products } from '../products';
   styleUrls: ['./product-list.component.css']
 })
 export class ProductListComponent {
-  products = products;
 
-  share() {
-    window.alert('The product has been shared!');
+  elements: string = '';
+  result: string[] = [];
+
+  go() {
+    const segments = this.elements.split(' ');
+    this.result = [];
+
+    for (const w of _.permutations(segments)) {
+      if (w.length === segments.length) {
+        this.result.push(w.join(''));
+      }
+    }
   }
 }
-
-
-/*
-Copyright Google LLC. All Rights Reserved.
-Use of this source code is governed by an MIT-style license that
-can be found in the LICENSE file at https://angular.io/license
-*/

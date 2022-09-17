@@ -95,8 +95,8 @@ label {
 /* Fancy Button */
 
 .fancy-button {
-  background-color: white;
-  color: #1976d2;
+  background-color:#1976d2;
+  color: white;
 }
 
 .fancy-button i.material-icons {

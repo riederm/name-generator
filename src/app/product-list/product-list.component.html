@@ -1,8 +1,8 @@
-<h2>Products</h2>
+  <input style="width:400px" [(ngModel)]="elements">
+  <a class="button fancy-button" (click)="go()">go</a>
 
-
-<!-- 
-Copyright Google LLC. All Rights Reserved.
-Use of this source code is governed by an MIT-style license that
-can be found in the LICENSE file at https://angular.io/license
--->
+<ul>
+  <li *ngFor="let word of result">
+      {{word}}
+  </li>
+</ul>
