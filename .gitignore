@@ -7,7 +7,7 @@ dist-schema/
 jsconfig.json
 
 # Intellij IDEA/WebStorm
-# https://intellij-support.jetbrains.com/hc/en-us/articles/206544839
+# https://intellij-support.jetbrains.com/hc/en-us/articles/206544839 xxxxx
 .idea/inspectionProfiles/
 .idea/**/compiler.xml
 .idea/**/encodings.xml
